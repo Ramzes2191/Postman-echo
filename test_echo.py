@@ -20,7 +20,7 @@ def test_postman_token_valid():
     assert response_post.json()['headers']['postman-token'] == '764e0dd6-9721-4c7d-94e3-c0f270bafaa5'
 
 def test_method_of_request_get():
-    assert requests.get(url_post).status_code == 404
+    assert requests.get(url_post).status_code == 407
 
 def test_method_of_request_post():
     assert requests.post(url_get).status_code == 404
